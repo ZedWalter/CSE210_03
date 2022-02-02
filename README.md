@@ -1,1 +1,1 @@
-# CSE210_03
+This is a program designed to play the game Jumper.
