@@ -25,4 +25,3 @@ class Word:
         word = self.word_list[random.randint(0,length - 1)]
 
         return word
-
