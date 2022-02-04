@@ -10,7 +10,7 @@ class Word:
     word_list = []
 
     # This function initializes our word class with an empty array.
-    def __innit__(self):
+    def __init__(self):
         self.word_list = []
 
     # This function appends the list of words you want to use to your list.
