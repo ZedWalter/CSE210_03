@@ -21,6 +21,7 @@ class Word:
 
     # This function grabs a random word from the list and returns it.
     def get_word(self):
+        self.add_word()
         length = len(self.word_list)
         word = self.word_list[random.randint(0,length - 1)]
 
