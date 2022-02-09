@@ -6,16 +6,16 @@ class Display:
     """
 
     def __init__(self):
-        self._body = """  /|\
-                          / \
+        self._body = """   /|\\
+   / \\
                 """
         self._line = 0
-        self.head = "o"
+        self.head = "    o    "
         self._parachute = [
-        "  ___  \n",
-        " / ___ \ \n",
-        " \     / \n",
-        "  \   /  \n", 
+        "   ___  ",
+        " / ___ \ ",
+        " \     / ",
+        "  \   /  ", 
         self.head
         ]
 
@@ -26,9 +26,12 @@ class Display:
             self._line += 1
 
     def print_man(self):
-        print(self._parachute + self._body)
+        for x in self._parachute:
+            print(x)
+        print(self._body)
 
-
+dsp = Display()
+dsp.print_man()
 
 
 
