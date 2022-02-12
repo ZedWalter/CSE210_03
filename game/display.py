@@ -10,22 +10,21 @@ class Display:
    / \\
                 """
     
-        self._line = 0
-        self.head = "    o    "
+        self._head = "    o    "
         self._newparachute = []
         self._parachute = [
         "   ___  ", #0
         " / ___ \ ", #1
         " \     / ", #2
         "  \   /  ", #3
-        self.head #4
+        self._head #4
         ]
 
 
     def parachute(self, lives):
         if lives == 0:
-            self.head = "    x"
-            self._parachute[4] = self.head
+            self._head = "    x"
+            self._parachute[4] = self._head
             self._newparachute = self._parachute[4:]
             # print (self._parachute)
             return self._newparachute
@@ -40,9 +39,9 @@ class Display:
             print(x)
         print(self._body)
 
-# dsp = Display()
-# dsp.parachute()
-# dsp.print_man()
+dsp = Display()
+dsp.parachute()
+dsp.print_man()
 
 #   ___
 # / ___ \
