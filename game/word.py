@@ -7,10 +7,11 @@ class Word:
     Attributes:
         
     """
-    word_list = []
+    word_list = None
 
     # This function initializes our word class with an empty array.
     def __init__(self):
+        self._puzzle_word = self.get_word()
         self.word_list = []
 
     # This function appends the list of words you want to use to your list.
@@ -25,3 +26,5 @@ class Word:
         word = self.word_list[random.randint(0,length - 1)]
 
         return word
+
+    def get_puzzle_word(self): return self._puzzle_word
