@@ -1,3 +1,4 @@
+
 class Director:
     """A person who directs the game.
     
